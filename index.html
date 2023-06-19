@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Search App</title>
+  <link rel="stylesheet" type="text/css" href="./public/css/style.css">
+</head>
+<body class="container">
+  <header>
+    <h1>Movie  Search</h1>
+    <form id="search-form">
+      <button type="button" class="search-fileter" id="filter-button">Filter</button>
+      <input type="text" minlength="2" id="search-input" placeholder="Enter movie title">
+      <button class="search" type="submit">Search</button>
+    </form>
+    <div class="filter-bar">
+       <div>
+        <label for="filter-type">Type:</label>
+        <select id="filter-type">
+          <option value="">All</option>
+          <option value="movie">Movie</option>
+          <option value="series">Series</option>
+          <option value="episode">Episode</option>
+        </select>
+       </div>
+        <div class="sorter">
+          <label for="sort-by">Sort By:</label>
+          <select id="sort-by">
+            <option value="relevance">Relevance</option>
+            <option value="rating">Rating</option>
+            <option value="year">Year</option>
+            <option value="title">Title</option>
+          </select>
+        </div>
+    </div>
+   
+  </header>
+
+  <div id="results"></div>
+  <div id="loader" class="d-center"> <img src="./public/assets/loader.gif" alt="">  </div>
+  <script src="./public/js/helpers.js"></script>
+  <script src="./public/js/config.js"></script>
+  <script src="./public/js/script.js"></script>
+</body>
+</html>

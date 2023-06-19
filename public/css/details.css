@@ -1,0 +1,100 @@
+.movie-details-wrapper {
+  display: grid;
+  gap: 1em;
+  grid-template-columns: 1fr 1fr; /* Divide the wrapper into two columns */
+}
+
+.movie-details-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.movie-details-list li {
+  margin-bottom: 10px;
+}
+
+.movie-details-label {
+  font-weight: bold;
+}
+
+.movie-details-value {
+  margin-left: 5px;
+}
+
+.movie-details-wrapper {
+  flex: 1;
+}
+
+.swiper-container {
+  width: 100%;
+}
+
+.swiper-slide {
+  width: 240px; /* Adjust the width as needed */
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.movie-details-related-movies-container {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.movie-details-image-wrapper>img{
+  width: 100%;
+
+}
+.movie-details-related-movies-container h2 {
+  margin-bottom: 10px;
+}
+
+.movie-details-glide {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.movie-details-glide__slides {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.movie-details-glide__slide {
+  list-style: none;
+  margin-right: 20px;
+}
+
+.movie-details-image-wrapper {
+  width: 100%;
+
+}
+.image-wrapper>img{
+  width: 100%;
+}
+/* Adjust the height of the movie card as needed */
+.movie-details-glide__slide> img {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.movie-card h3 {
+  width: 320px;
+  overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+  #movie-details-container {
+    grid-template-columns: 1fr; /* Change to a single column layout for smaller screens */
+  }
+  
+  .movie-details-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
